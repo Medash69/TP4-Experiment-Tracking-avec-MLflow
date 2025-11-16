@@ -4,9 +4,9 @@ Objectif : tracer et comparer plusieurs runs YOLO tiny sur un mini-dataset (1 cl
 
 ## Quickstart
 ```bash
+docker compose up -d   # MLflow (5000), MinIO (9001)
 pip install -r requirements.txt
 python tools/make_tiny_person_from_coco128.py
-docker compose up -d   # MLflow (5000), MinIO (9001)
 ```
 
 Baseline (ex.) : python src/train_cv.py --epochs 3 --imgsz 320 --exp-name cv_yolo_tiny
